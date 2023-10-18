@@ -14,4 +14,9 @@ public class SceneControl
     {
         SceneManager.LoadScene(sceneIntId);
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
