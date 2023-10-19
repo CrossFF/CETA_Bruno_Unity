@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_1
+      name: Token_5
       rect:
         serializedVersion: 2
         x: 97
@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_2
+      name: Token_4
       rect:
         serializedVersion: 2
         x: 299
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_3
+      name: Token_3
       rect:
         serializedVersion: 2
         x: 461
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_8
+      name: Token_1
       rect:
         serializedVersion: 2
         x: 949
@@ -690,16 +690,17 @@ TextureImporter:
       Button_Exit_1: 2043294362
       pack4_13: -4775107
       pack4_10: 386141542
-      pack4_2: 664216812
+      Token_4: 664216812
       pack4_19: 1110355875
       pack4_24: -1721072554
       pack4_5: 1166309184
       pack4_6: 1962135242
       pack4_15: 1259930045
       pack4_14: 1688830450
+      Token_3: -1058152119
       pack4_20: -1956631132
-      pack4_8: -178856402
       pack4_0: -94905285
+      Token_5: 975538425
       Button_Exit_2: -281354745
       pack4_9: -737599339
       pack4_7: 704685232
@@ -708,8 +709,7 @@ TextureImporter:
       pack4_21: 1724864974
       pack4_4: -2079366650
       pack4_25: 611571526
-      pack4_3: -1058152119
-      pack4_1: 975538425
+      Token_1: -178856402
       pack4_11: 221320704
   spritePackingTag: 
   pSDRemoveMatte: 0

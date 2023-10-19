@@ -864,7 +864,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_35
+      name: Token_2
       rect:
         serializedVersion: 2
         x: 906
@@ -1021,10 +1021,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack3_17: 1385938418
-      pack3_23: -1982487903
-      pack3_7: -235942068
+      pack3_33: 751144038
+      pack3_22: 1900799294
       pack3_15: 15155825
+      Token_2: 2017372859
       pack3_24: -1063266590
       pack3_36: 1151237785
       pack3_9: -631076208
@@ -1057,12 +1057,12 @@ TextureImporter:
       pack3_29: 1596947717
       pack3_13: -404472547
       pack3_19: 2110717393
-      pack3_8: -703797177
+      pack3_17: 1385938418
       pack3_18: -1753988267
-      pack3_22: 1900799294
       pack3_26: -81133161
-      pack3_33: 751144038
-      pack3_35: 2017372859
+      pack3_8: -703797177
+      pack3_23: -1982487903
+      pack3_7: -235942068
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
