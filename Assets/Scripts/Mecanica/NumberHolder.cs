@@ -7,6 +7,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
 {
     private Transform tParent;
     private NumberBarManager numberBar;
+    [SerializeField] private Animator loadingAnim;
 
     private List<NumberToken> tokens;
     private int totalValue = 0;
@@ -20,7 +21,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
 
     private void Start()
     {
-        numberBar.HighlightNumber(totalValue);
+        numberBar.HighlightNumberNoSound(totalValue);
     }
 
     public void OnDrop(PointerEventData eventData)
@@ -58,6 +59,16 @@ public class NumberHolder : MonoBehaviour, IDropHandler
 
     private void CheckTokensValue()
     {
+        StopAllCoroutines();
+        StartCoroutine(CalculateTotalValue());
+    }
+
+    IEnumerator CalculateTotalValue()
+    {
+        // animation and sound
+        loadingAnim.transform.SetAsLastSibling();
+        loadingAnim.SetTrigger("StartLoading");
+        // logic
         totalValue = 0;
         if (tokens.Count != 0)
         {
@@ -66,6 +77,11 @@ public class NumberHolder : MonoBehaviour, IDropHandler
                 totalValue += token.value;
             }
         }
+
+        yield return new WaitForSeconds(0.5f);
+
+        // animation and sound
+        loadingAnim.SetTrigger("EndLoading");
         numberBar.HighlightNumber(totalValue);
     }
 }

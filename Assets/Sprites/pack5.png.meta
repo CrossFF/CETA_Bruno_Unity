@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pack5_0
+      name: Button_Levels
       rect:
         serializedVersion: 2
         x: 10
@@ -137,7 +137,7 @@ TextureImporter:
         width: 204
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_1
+      name: Button_Tutorial
       rect:
         serializedVersion: 2
         x: 223
@@ -158,7 +158,7 @@ TextureImporter:
         width: 218
         height: 116
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,7 +179,7 @@ TextureImporter:
         width: 150
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,7 +192,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_3
+      name: Tube_1
       rect:
         serializedVersion: 2
         x: 597
@@ -200,7 +200,7 @@ TextureImporter:
         width: 200
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_4
+      name: Tube_2
       rect:
         serializedVersion: 2
         x: 799
@@ -221,7 +221,7 @@ TextureImporter:
         width: 160
         height: 67
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_5
+      name: Bruno_1
       rect:
         serializedVersion: 2
         x: 961
@@ -242,7 +242,7 @@ TextureImporter:
         width: 40
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_6
+      name: Panel_Metal
       rect:
         serializedVersion: 2
         x: 13
@@ -263,7 +263,7 @@ TextureImporter:
         width: 578
         height: 197
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_7
+      name: Panel_Metal_10Tokens
       rect:
         serializedVersion: 2
         x: 613
@@ -284,7 +284,7 @@ TextureImporter:
         width: 343
         height: 351
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -305,7 +305,7 @@ TextureImporter:
         width: 40
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_9
+      name: Screw_0
       rect:
         serializedVersion: 2
         x: 966
@@ -326,7 +326,7 @@ TextureImporter:
         width: 40
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_10
+      name: Screw_1
       rect:
         serializedVersion: 2
         x: 966
@@ -347,7 +347,7 @@ TextureImporter:
         width: 40
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_11
+      name: Screw_2
       rect:
         serializedVersion: 2
         x: 968
@@ -368,7 +368,7 @@ TextureImporter:
         width: 37
         height: 36
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_12
+      name: Screw_3
       rect:
         serializedVersion: 2
         x: 971
@@ -389,7 +389,7 @@ TextureImporter:
         width: 34
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -410,7 +410,7 @@ TextureImporter:
         width: 600
         height: 699
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_14
+      name: Screw_4
       rect:
         serializedVersion: 2
         x: 969
@@ -431,7 +431,7 @@ TextureImporter:
         width: 36
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_15
+      name: Screw_5
       rect:
         serializedVersion: 2
         x: 971
@@ -452,7 +452,7 @@ TextureImporter:
         width: 33
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -465,7 +465,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_16
+      name: Screw_6
       rect:
         serializedVersion: 2
         x: 968
@@ -473,7 +473,7 @@ TextureImporter:
         width: 38
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_17
+      name: Hand_OK
       rect:
         serializedVersion: 2
         x: 607
@@ -494,7 +494,7 @@ TextureImporter:
         width: 354
         height: 565
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -507,7 +507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack5_18
+      name: Number bar_Vertical
       rect:
         serializedVersion: 2
         x: 969
@@ -515,7 +515,7 @@ TextureImporter:
         width: 35
         height: 560
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -538,25 +538,25 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack5_3: 1368008188
-      pack5_9: -546479489
-      pack5_6: 785855985
-      pack5_15: -1290791808
-      pack5_12: 633836540
-      pack5_17: -222269342
+      Panel_Metal: 785855985
+      Screw_1: -854770232
+      Screw_3: 633836540
+      Button_Tutorial: 1352510725
+      Screw_2: -311436391
       pack5_8: 1215932730
-      pack5_14: -1518428741
-      pack5_10: -854770232
-      pack5_7: 1893506920
-      pack5_16: 775995383
-      pack5_0: -1262617497
-      pack5_1: 1352510725
-      pack5_2: -23696360
+      Panel_Metal_10Tokens: 1893506920
+      Bruno_1: -512296342
+      Screw_5: -1290791808
       pack5_13: 1304704773
-      pack5_18: 1219404533
-      pack5_4: 387771108
-      pack5_11: -311436391
-      pack5_5: -512296342
+      pack5_2: -23696360
+      Tube_2: 387771108
+      Tube_1: 1368008188
+      Screw_6: 775995383
+      Button_Levels: -1262617497
+      Number bar_Vertical: 1219404533
+      Screw_0: -546479489
+      Screw_4: -1518428741
+      Hand_OK: -222269342
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

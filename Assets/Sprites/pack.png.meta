@@ -171,7 +171,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack_2
+      name: Hand_Tutorial
       rect:
         serializedVersion: 2
         x: 454
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack_5
+      name: Loading
       rect:
         serializedVersion: 2
         x: 242
@@ -455,6 +455,7 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Tittle: 1186561518
+      Loading: -2100840036
       Bruno_Bottom: -341860259
       pack_7: -1807938788
       pack_13: 274472937
@@ -462,11 +463,10 @@ TextureImporter:
       pack_3: -473940919
       pack_6: -298011681
       pack_10: -670763237
-      pack_2: 658698507
       pack_14: 643022684
       pack_0: 669237686
-      pack_5: -2100840036
       pack_8: 1754559620
+      Hand_Tutorial: 658698507
       pack_9: 1918708676
       pack_4: 161432322
       pack_12: -898784933

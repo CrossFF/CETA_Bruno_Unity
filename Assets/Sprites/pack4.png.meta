@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_6
+      name: Button_OK_2
       rect:
         serializedVersion: 2
         x: 687
@@ -381,7 +381,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_12
+      name: Button_OK_1
       rect:
         serializedVersion: 2
         x: 679
@@ -402,7 +402,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_13
+      name: Tube_1
       rect:
         serializedVersion: 2
         x: 901
@@ -423,7 +423,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_14
+      name: Tutorial_AR_1
       rect:
         serializedVersion: 2
         x: 2
@@ -444,7 +444,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_15
+      name: Tutorial_AR_2
       rect:
         serializedVersion: 2
         x: 454
@@ -532,7 +532,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 906
-        y: 485
+        y: 484
         width: 94
         height: 97
       alignment: 0
@@ -685,21 +685,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack4_12: 377998787
       pack4_16: -1447232772
       Button_Exit_1: 2043294362
-      pack4_13: -4775107
+      Button_OK_1: 377998787
       pack4_10: 386141542
       Token_4: 664216812
       pack4_19: 1110355875
       pack4_24: -1721072554
       pack4_5: 1166309184
-      pack4_6: 1962135242
-      pack4_15: 1259930045
-      pack4_14: 1688830450
-      Token_3: -1058152119
       pack4_20: -1956631132
+      Tutorial_AR_2: 1259930045
+      Token_3: -1058152119
       pack4_0: -94905285
+      Button_OK_2: 1962135242
       Token_5: 975538425
       Button_Exit_2: -281354745
       pack4_9: -737599339
@@ -707,9 +705,11 @@ TextureImporter:
       pack4_18: -1750498258
       pack4_17: -204848746
       pack4_21: 1724864974
+      Tube_1: -4775107
       pack4_4: -2079366650
       pack4_25: 611571526
       Token_1: -178856402
+      Tutorial_AR_1: 1688830450
       pack4_11: 221320704
   spritePackingTag: 
   pSDRemoveMatte: 0
