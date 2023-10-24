@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_14
+      name: Bruno_Boddy_Lvl1_0
       rect:
         serializedVersion: 2
         x: 644
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_15
+      name: Bruno_Boddy_Lvl1_1
       rect:
         serializedVersion: 2
         x: 701
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_16
+      name: Bruno_Boddy_Lvl1_2
       rect:
         serializedVersion: 2
         x: 754
@@ -397,20 +397,20 @@ TextureImporter:
       pack2_7: -771925056
       pack2_20: -1431463601
       pack2_12: 886278940
-      pack2_16: 499994962
       pack2_1: -192099979
       pack2_13: 628438610
       pack2_6: 1344255093
       pack2_19: 661630698
+      Bruno_Boddy_Lvl1_1: 189093415
       pack2_9: 924400173
       pack2_4: 623965880
-      pack2_15: 189093415
+      Bruno_Boddy_Lvl1_0: 466888252
       pack2_18: -2042674847
       pack2_2: 1149892871
       pack2_11: -178768060
-      pack2_14: 466888252
       City_Bottom: -807306370
       pack2_21: 362642501
+      Bruno_Boddy_Lvl1_2: 499994962
       pack2_0: 539368030
       pack2_10: -761241319
   spritePackingTag: 
