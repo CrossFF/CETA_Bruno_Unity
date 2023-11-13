@@ -12,6 +12,9 @@ public class NumberHolder : MonoBehaviour, IDropHandler
     private List<NumberToken> tokens;
     private int totalValue = 0;
 
+    [SerializeField] private LevelManager levelManager;
+    [SerializeField] private float timeBeforeCalculate;
+
     private void Awake()
     {
         tParent = GameObject.Find("Panel_Drag and Drop").transform;
@@ -60,6 +63,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
     private void CheckTokensValue()
     {
         StopAllCoroutines();
+        loadingAnim.SetBool("Loading", false);
         StartCoroutine(CalculateTotalValue());
     }
 
@@ -67,7 +71,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
     {
         // animation and sound
         loadingAnim.transform.SetAsLastSibling();
-        loadingAnim.SetTrigger("StartLoading");
+        loadingAnim.SetBool("Loading", true);
         // logic
         totalValue = 0;
         if (tokens.Count != 0)
@@ -77,11 +81,14 @@ public class NumberHolder : MonoBehaviour, IDropHandler
                 totalValue += token.value;
             }
         }
+        //bruno empieza a preparar moviento
 
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(timeBeforeCalculate);
 
         // animation and sound
-        loadingAnim.SetTrigger("EndLoading");
+        loadingAnim.SetBool("Loading", false);
         numberBar.HighlightNumber(totalValue);
+        // el personaje se mueve al valor correspondiente
+        levelManager.MoveBruno(totalValue);
     }
 }

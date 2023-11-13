@@ -5,15 +5,16 @@ using UnityEngine;
 public class WorldNumber : MonoBehaviour
 {
     private LineRenderer lineRenderer;
-
     public Color lineColor;
+    public int numberValue; // valor que representa el objeto;
 
     private void Awake()
     {
         lineRenderer = GetComponent<LineRenderer>();
     }
 
-    private void Update() {
+    private void Update()
+    {
         lineRenderer.startColor = lineColor;
         lineRenderer.endColor = lineColor;
     }
@@ -21,8 +22,8 @@ public class WorldNumber : MonoBehaviour
     public void SetPosition(Vector3 pos)
     {
         transform.position = pos;
-        Vector3 topPoint = new Vector3(transform.position.x, 
-                                       transform.position.y + 20f, 
+        Vector3 topPoint = new Vector3(transform.position.x,
+                                       transform.position.y + 20f,
                                        transform.position.z);
         Vector3[] positions = new Vector3[2];
         positions[0] = transform.position;
