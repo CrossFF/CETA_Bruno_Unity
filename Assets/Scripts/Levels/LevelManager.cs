@@ -4,14 +4,18 @@ using UnityEngine;
 
 public class LevelManager : MonoBehaviour
 {
-    public List<WorldNumber> numberPosition;
-    public GameObject prefabScrew;
+    [Header("References")]
+    [SerializeField] private SoundManager soundManager;
+    [SerializeField] private GameObject prefabScrew;
     [SerializeField] private Bruno bruno;
-    public int screwNumberPosition;
-    public GameObject screw;
+    [SerializeField] private List<WorldNumber> numberPosition;
+
+    private int screwNumberPosition;
+    private GameObject screw;
     private int localPoints; // puntos conseguidos en el nivel
     private int totalPoints; // puntos totales del jugador
 
+    public GameObject Screw { get { return screw; } }
     public int LocalPoints { get { return localPoints; } }
 
     public void GenerateScrew()
@@ -51,6 +55,12 @@ public class LevelManager : MonoBehaviour
         }
     }
 
+    public void PrepareBrunoToMove()
+    {
+        bruno.PrepareToMove();
+        soundManager.PlayNeutralBruno();
+    }
+
     public void MoveBruno(int numPos)
     {
         WorldNumber target = null;
@@ -74,13 +84,21 @@ public class LevelManager : MonoBehaviour
         // si bruno esta en la posicion de un tornillo
         //// activa animacion de conseguir tornillo
         //// suma puntos
+        //// sonido de "buen trabajo"
         //// Destruccion de Tornillo para crear nuevo segun nivel
+        /// sino
+        //// sonido de error de bruno
+        //// ayuda para el jugador
         if (numberPositionBruno == screwNumberPosition)
         {
-            // animacion de bruno
-            // animacion de tornillo
+            bruno.Interact();
+            screw.GetComponent<Screw>().Interact(bruno.transform.position);
+            soundManager.PlayPositiveClip();
             localPoints++;
-            Destroy(screw);
+        }
+        else
+        {
+            soundManager.PlayNegativeBruno();
         }
     }
 

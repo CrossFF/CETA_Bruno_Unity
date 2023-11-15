@@ -13,7 +13,8 @@ public class NumberHolder : MonoBehaviour, IDropHandler
     private int totalValue = 0;
 
     [SerializeField] private LevelManager levelManager;
-    [SerializeField] private float timeBeforeCalculate;
+    [SerializeField] private float timeBeforeCalculate = 1f;
+    [SerializeField] private float graceTime = 0.5f;
 
     private void Awake()
     {
@@ -69,6 +70,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
 
     IEnumerator CalculateTotalValue()
     {
+        yield return new WaitForSeconds(graceTime);
         // animation and sound
         loadingAnim.transform.SetAsLastSibling();
         loadingAnim.SetBool("Loading", true);
@@ -82,6 +84,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
             }
         }
         //bruno empieza a preparar moviento
+        levelManager.PrepareBrunoToMove();
 
         yield return new WaitForSeconds(timeBeforeCalculate);
 

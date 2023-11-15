@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1041872355027096238}
   - component: {fileID: 8083795938966002774}
   - component: {fileID: 561708667161563323}
+  - component: {fileID: 7051867488453305144}
   m_Layer: 0
   m_Name: Screw_3
   m_TagString: Untagged
@@ -73,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 633836540, guid: ae913b02bf7977b47801ad5cbd2d65b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -105,3 +106,15 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7051867488453305144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 17692211791242966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e298c0f755c72499d4ef6ea267e116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
