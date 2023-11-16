@@ -883,7 +883,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1418863094, guid: f17d41a66c84f6b49a8b57931add98b3, type: 3}
+  m_Sprite: {fileID: -1307810609, guid: f17d41a66c84f6b49a8b57931add98b3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1268,8 +1268,8 @@ MonoBehaviour:
   - {fileID: 320630940}
   - {fileID: 634558455}
   totalPointText: {fileID: 1900666213}
-  level: 1
-  numbers: 010000000200000003000000050000000700000009000000
+  level: 2
+  numbers: 0200000004000000020000000600000004000000080000000a000000080000000600000008000000
   textPoints: {fileID: 638495078}
 --- !u!4 &772908508
 Transform:
@@ -2718,7 +2718,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Level 1
+  m_text: Level 2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

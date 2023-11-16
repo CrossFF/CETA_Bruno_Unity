@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.SceneManagement;
+using UnityEditor.PackageManager;
 
 public class LevelManager : MonoBehaviour
 {
@@ -10,6 +13,12 @@ public class LevelManager : MonoBehaviour
     [SerializeField] private Bruno bruno;
     [SerializeField] private List<WorldNumber> numberPosition;
 
+    [Header("GUI")]
+    [SerializeField] private TMP_Text totalPointText;
+
+    [Header("Level Information")]
+    [SerializeField] private int level;
+
     private int screwNumberPosition;
     private GameObject screw;
     private int localPoints; // puntos conseguidos en el nivel
@@ -18,43 +27,38 @@ public class LevelManager : MonoBehaviour
     public GameObject Screw { get { return screw; } }
     public int LocalPoints { get { return localPoints; } }
 
-    public void GenerateScrew()
+    private void Awake()
     {
-        // random
-        int num = Random.Range(0, numberPosition.Count);
-        Vector3 pos = new Vector3(numberPosition[num].transform.position.x, 1f, 0f);
-        screwNumberPosition = numberPosition[num].numberValue;
-        screw = Instantiate(prefabScrew, pos, Quaternion.identity);
+        // cargo informacion guardada
+        PlayerStats playerStats = LoadSaveManager.LoadGame();
+        totalPoints = playerStats.score;
+        totalPointText.text = totalPoints.ToString();
     }
 
-    public void GenerateScrew(int num)
+    #region Instantiate Screw
+    public WorldNumber GetNumberPosition(int number)
     {
-        // en posicion especifica
-        // busco el numero en la lista de posciones
-        // si ese numero existe
-        //// instancio el tornillo en la posicion de ese numero
-        // sino
-        //// muestro error de numero incorrecto
-        WorldNumber position = null;
+        // verifico que el numero existe en la lista
+        // devuelvo el numero
+        WorldNumber wPosition = null;
         foreach (var item in numberPosition)
         {
-            if (num == item.numberValue)
+            if (number == item.numberValue)
             {
-                position = item;
+                wPosition = item;
             }
         }
-        if (position != null)
-        {
-            Vector3 pos = new Vector3(position.transform.position.x, 1f, 0f);
-            screwNumberPosition = position.numberValue;
-            screw = Instantiate(prefabScrew, pos, Quaternion.identity);
-        }
-        else
-        {
-            Debug.Log("No existe ese numero en este nivel");
-        }
+        return wPosition;
     }
 
+    public void GenerateScrew(int number, Vector3 position)
+    {
+        screwNumberPosition = number;
+        screw = Instantiate(prefabScrew, position, Quaternion.identity);
+    }
+    #endregion
+
+    #region Bruno Movement
     public void PrepareBrunoToMove()
     {
         bruno.PrepareToMove();
@@ -101,9 +105,25 @@ public class LevelManager : MonoBehaviour
             soundManager.PlayNegativeBruno();
         }
     }
+    #endregion
 
-    public void EndLevel()
+    /// <summary>
+    /// Perform the end of the level
+    /// </summary>
+    /// <param name="win"> The player win? true=yes false=no</param>
+    public void EndLevel(bool win)
     {
-        Debug.Log("Fin del Nivel");
+        // guardo la info del jugador
+        // si el jugador gano
+        //// muestro escena de siguiente nivel
+        // sino 
+        //// muestro escena de repetir el nivel
+        PlayerStats playerStats = new PlayerStats(totalPoints + localPoints, level);
+        LoadSaveManager.SaveGame(playerStats);
+        SceneControl sceneControl = new();
+        if (win)
+            sceneControl.ChangeScene("NextLevel");
+        else
+            sceneControl.ChangeScene("RepeatLevel");
     }
 }

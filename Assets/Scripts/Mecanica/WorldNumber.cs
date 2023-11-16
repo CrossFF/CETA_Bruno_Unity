@@ -23,7 +23,7 @@ public class WorldNumber : MonoBehaviour
     {
         transform.position = pos;
         Vector3 topPoint = new Vector3(transform.position.x,
-                                       transform.position.y + 5f,
+                                       transform.position.y + 4f,
                                        transform.position.z);
         Vector3[] positions = new Vector3[2];
         positions[0] = transform.position;

@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pack12_0
+      name: CityBackground_3
       rect:
         serializedVersion: 2
         x: 2
@@ -137,7 +137,7 @@ TextureImporter:
         width: 450
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack12_1
+      name: CityBackground_4
       rect:
         serializedVersion: 2
         x: 454
@@ -158,7 +158,7 @@ TextureImporter:
         width: 450
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,8 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack12_0: -2006300014
-      pack12_1: -1216672315
+      CityBackground_3: -2006300014
+      CityBackground_4: -1216672315
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_20
+      name: Exelente trabajo
       rect:
         serializedVersion: 2
         x: 462
@@ -360,7 +360,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_21
+      name: Vamos de vuelta
       rect:
         serializedVersion: 2
         x: 462
@@ -395,7 +395,7 @@ TextureImporter:
       pack2_5: -141812433
       pack2_8: 1819571741
       pack2_7: -771925056
-      pack2_20: -1431463601
+      Vamos de vuelta: 362642501
       pack2_12: 886278940
       pack2_1: -192099979
       pack2_13: 628438610
@@ -409,9 +409,9 @@ TextureImporter:
       pack2_2: 1149892871
       pack2_11: -178768060
       City_Bottom: -807306370
-      pack2_21: 362642501
       Bruno_Boddy_Lvl1_2: 499994962
       pack2_0: 539368030
+      Exelente trabajo: -1431463601
       pack2_10: -761241319
   spritePackingTag: 
   pSDRemoveMatte: 0

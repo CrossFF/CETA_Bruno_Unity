@@ -8,6 +8,7 @@ public class Screw : MonoBehaviour
     private Vector3 target;
     private float speed = 2f;
     private bool move = false;
+
     private void Start()
     {
         animator = GetComponent<Animator>();
@@ -20,7 +21,7 @@ public class Screw : MonoBehaviour
             transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
             if (Vector3.Distance(transform.position, target) <= 0.05)
             {
-                Destroy(gameObject);
+                Destroy(gameObject, 1f);
             }
         }
     }
