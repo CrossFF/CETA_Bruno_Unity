@@ -816,7 +816,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1343894547, guid: 6a05b1d6a13bffb4596c77027b5be67a, type: 3}
+  m_Sprite: {fileID: -1379275222, guid: a7526ca529510f5409995160fe1b2b0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1301,8 +1301,8 @@ MonoBehaviour:
   - {fileID: 634558455}
   totalPointText: {fileID: 1900666213}
   level: 5
-  random: 0
-  numbers: 0a0000000900000008000000070000000500000003000000
+  random: 1
+  numbers: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   textPoints: {fileID: 638495078}
 --- !u!1 &798616831
 GameObject:

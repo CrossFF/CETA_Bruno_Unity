@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack_7
+      name: Fire_Vertical
       rect:
         serializedVersion: 2
         x: 995
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack_8
+      name: Fire_Horizontal
       rect:
         serializedVersion: 2
         x: 995
@@ -457,7 +457,6 @@ TextureImporter:
       Tittle: 1186561518
       Loading: -2100840036
       Bruno_Bottom: -341860259
-      pack_7: -1807938788
       pack_13: 274472937
       Tree_Background: -1401994964
       pack_3: -473940919
@@ -465,9 +464,10 @@ TextureImporter:
       pack_10: -670763237
       pack_14: 643022684
       pack_0: 669237686
-      pack_8: 1754559620
+      Fire_Vertical: -1807938788
       Hand_Tutorial: 658698507
       pack_9: 1918708676
+      Fire_Horizontal: 1754559620
       pack_4: 161432322
       pack_12: -898784933
   spritePackingTag: 

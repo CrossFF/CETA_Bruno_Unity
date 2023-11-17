@@ -7,7 +7,7 @@ public class Bruno : MonoBehaviour
     [Header("References")]
     public LevelManager levelManager;
     public WorldNumber targetNumber;
-    public float stopDistance = 0.05f; // rango en el que el personaje deja de moverse al objetivo
+    public float stopDistance = 0.01f; // rango en el que el personaje deja de moverse al objetivo
     private bool prepareToMove = false;
     private bool move = false;
     private float timeMove = 0.8f;
