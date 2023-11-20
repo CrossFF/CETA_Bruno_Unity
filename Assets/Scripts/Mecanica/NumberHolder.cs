@@ -94,4 +94,14 @@ public class NumberHolder : MonoBehaviour, IDropHandler
         // el personaje se mueve al valor correspondiente
         levelManager.MoveBruno(totalValue);
     }
+
+    public List<int> GetTokensInPlay()
+    {
+        List<int> numbers = new List<int>();
+        foreach (var token in tokens)
+        {
+            numbers.Add(token.value);
+        }
+        return numbers;
+    }
 }

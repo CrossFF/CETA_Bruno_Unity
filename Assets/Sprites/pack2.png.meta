@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack2_6
+      name: Bruno_2
       rect:
         serializedVersion: 2
         x: 910
@@ -397,9 +397,9 @@ TextureImporter:
       pack2_7: -771925056
       Vamos de vuelta: 362642501
       pack2_12: 886278940
+      Bruno_2: 1344255093
       pack2_1: -192099979
       pack2_13: 628438610
-      pack2_6: 1344255093
       pack2_19: 661630698
       Bruno_Boddy_Lvl1_1: 189093415
       pack2_9: 924400173

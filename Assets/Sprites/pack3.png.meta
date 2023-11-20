@@ -213,7 +213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_4
+      name: Bruno_5
       rect:
         serializedVersion: 2
         x: 906
@@ -234,15 +234,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_5
+      name: Bruno_2_Boddy
       rect:
         serializedVersion: 2
         x: 968
         y: 963
         width: 35
         height: 58
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5000105, y: 0.82349473}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,7 +255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_6
+      name: Bruno_4
       rect:
         serializedVersion: 2
         x: 2
@@ -276,7 +276,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_7
+      name: Bruno_1_Head
       rect:
         serializedVersion: 2
         x: 54
@@ -297,7 +297,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_8
+      name: Bruno_2_Head
       rect:
         serializedVersion: 2
         x: 106
@@ -318,7 +318,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_9
+      name: Bruno_3
       rect:
         serializedVersion: 2
         x: 396
@@ -360,15 +360,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_11
+      name: Bruno_4_Body
       rect:
         serializedVersion: 2
         x: 58
         y: 772
         width: 44
         height: 133
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.48882657, y: 0.9435971}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -486,7 +486,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_17
+      name: Bruno_5_Head
       rect:
         serializedVersion: 2
         x: 963
@@ -675,7 +675,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack3_26
+      name: Bruno_3_Head
       rect:
         serializedVersion: 2
         x: 980
@@ -1021,48 +1021,48 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack3_23: -1982487903
+      Bruno_1_Head: -235942068
       Bruno_Head_Lvl 1: 15155825
-      pack3_26: -81133161
       Token_2: 2017372859
       pack3_24: -1063266590
       pack3_36: 1151237785
-      pack3_9: -631076208
+      Bruno_4: 1239573891
       pack3_20: -1962360095
       pack3_40: 1388227352
       pack3_28: 354580260
-      pack3_5: -506239757
       pack3_31: -1678952394
       Tree_Background_Cinematic: 155220617
+      Bruno_5_Head: 1385938418
       pack3_2: -2095366867
+      Bruno_5: -1873037328
+      Bruno_4_Body: 1714227025
       pack3_1: 188804516
       pack3_10: -1120636804
       pack3_16: -73352477
       pack3_14: 1276454135
       pack3_0: -1740260781
-      pack3_11: 1714227025
-      pack3_4: -1873037328
       pack3_25: 1826803387
+      Bruno_2_Boddy: -506239757
+      pack3_38: 540900770
       pack3_3: 211513736
       pack3_32: -2083673131
       pack3_27: -781138964
       pack3_34: 1902089851
       pack3_39: -1812394861
       pack3_12: 249888331
-      pack3_38: 540900770
-      pack3_6: 1239573891
+      Bruno_2_Head: -703797177
+      Bruno_3: -631076208
+      Bruno_3_Head: -81133161
       pack3_37: -1688923307
       pack3_30: 1651177688
       pack3_29: 1596947717
       Mochila Cohete: 221596064
       pack3_13: -404472547
       pack3_19: 2110717393
-      pack3_17: 1385938418
-      pack3_8: -703797177
       pack3_18: -1753988267
       pack3_22: 1900799294
       pack3_33: 751144038
-      pack3_7: -235942068
+      pack3_23: -1982487903
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

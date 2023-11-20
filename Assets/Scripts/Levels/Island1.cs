@@ -3,12 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Level1 : LevelManager
+public class Island1 : LevelManager
 {
-    [Header("Numbers for the Level")]
-    [SerializeField] private bool random = false;
-    [SerializeField] private List<int> numbers;
-
     [Header("GUI Level 1")]
     [SerializeField] private TMP_Text textPoints;
 
@@ -16,17 +12,7 @@ public class Level1 : LevelManager
 
     private void Start()
     {
-        pointsToWin = numbers.Count;
-        // si la lista de numeros es random
-        //// genero esa cantidad de numeros
-        //(A mejorar)
-        if(random)
-        {
-            for (int i = 0; i < numbers.Count; i++)
-            {
-                numbers[i] = Random.Range(0,11);
-            }
-        }
+        pointsToWin = Numbers.Count;
     }
 
     private void Update()
@@ -62,16 +48,15 @@ public class Level1 : LevelManager
         ////// le digo al manager que instancie la tuerca en la posicion deseada
         if (Screw == null)
         {
-            if (numbers.Count != 0)
+            if (Numbers.Count != 0)
             {
-                WorldNumber wNumber = GetNumberPosition(numbers[0]);
+                WorldNumber wNumber = GetNumberPosition(Numbers[0]);
                 if (wNumber != null)
                 {
                     Vector3 fixedPosition = new Vector3(wNumber.transform.position.x,
                                                         wNumber.transform.position.y + 2f,
                                                         wNumber.transform.position.z);
-                    GenerateScrew(numbers[0], fixedPosition);
-                    numbers.Remove(numbers[0]);
+                    GenerateScrew(Numbers[0], fixedPosition);
                 }
             }
         }

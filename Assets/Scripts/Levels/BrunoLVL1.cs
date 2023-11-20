@@ -24,7 +24,7 @@ public class BrunoLVL1 : Bruno
         }
         if (Move)
         {
-            fixedTarget = new Vector3(targetNumber.transform.position.x,
+            fixedTarget = new Vector3(TargetNumber.transform.position.x,
                                       transform.position.y,
                                       transform.position.z);
             if (animator.GetFloat("Speed") != 1f)
@@ -43,13 +43,13 @@ public class BrunoLVL1 : Bruno
             }
             // movimiento
             transform.position = Vector3.MoveTowards(transform.position, fixedTarget, Speed * Time.deltaTime);
-            if (Vector3.Distance(transform.position, fixedTarget) <= stopDistance)
+            if (Vector3.Distance(transform.position, fixedTarget) <= StopDistance)
             {
                 // detengo el movimiento
                 // informo al manager que estoy en la posicion deseada
                 StopMovement();
                 animator.SetFloat("Speed", 0);
-                levelManager.BrunoInPosition(lastNumberPos);
+                LevelManager.BrunoInPosition(lastNumberPos);
             }
         }
         if (Interacting)

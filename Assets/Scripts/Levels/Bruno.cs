@@ -5,19 +5,23 @@ using UnityEngine;
 public class Bruno : MonoBehaviour
 {
     [Header("References")]
-    public LevelManager levelManager;
-    public WorldNumber targetNumber;
-    public float stopDistance = 0.01f; // rango en el que el personaje deja de moverse al objetivo
+    [SerializeField] private LevelManager levelManager;
+    [SerializeField] private float stopDistance = 0.01f; // rango en el que el personaje deja de moverse al objetivo
+    
+    private WorldNumber targetNumber;
     private bool prepareToMove = false;
     private bool move = false;
     private float timeMove = 0.8f;
     private float speed;
     public int lastNumberPos;
     private bool intercat = false;
-    
+
+    public LevelManager LevelManager { get { return levelManager; } }
+    public WorldNumber TargetNumber { get { return targetNumber; } }
+    public float StopDistance { get { return stopDistance; } }
     public bool PrepareMovement { get { return prepareToMove; } }
     public bool Move { get { return move; } }
-    public float Speed {get { return speed;}}
+    public float Speed { get { return speed; } }
     public bool Interacting { get { return intercat; } }
 
     #region Movement

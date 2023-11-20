@@ -7,7 +7,8 @@ public class BrunoLVL5 : Bruno
     private Vector3 fixedTarget;
     private Animator animator;
 
-    private void Awake() {
+    private void Awake()
+    {
         animator = GetComponent<Animator>();
     }
 
@@ -22,7 +23,7 @@ public class BrunoLVL5 : Bruno
         if (Move)
         {
             fixedTarget = new Vector3(transform.position.x,
-                                      targetNumber.transform.position.y,
+                                      TargetNumber.transform.position.y,
                                       transform.position.z);
             if (animator.GetFloat("Speed") != 1f)
             {
@@ -31,13 +32,13 @@ public class BrunoLVL5 : Bruno
             }
             // movimiento
             transform.position = Vector3.MoveTowards(transform.position, fixedTarget, Speed * Time.deltaTime);
-            if (Vector3.Distance(transform.position, fixedTarget) <= stopDistance)
+            if (Vector3.Distance(transform.position, fixedTarget) <= StopDistance)
             {
                 // detengo el movimiento
                 // informo al manager que estoy en la posicion deseada
                 StopMovement();
                 animator.SetFloat("Speed", 0);
-                levelManager.BrunoInPosition(lastNumberPos);
+                LevelManager.BrunoInPosition(lastNumberPos);
             }
         }
         if (Interacting)

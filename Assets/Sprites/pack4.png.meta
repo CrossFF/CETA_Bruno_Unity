@@ -276,15 +276,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_7
+      name: Bruno_3_Boddy
       rect:
         serializedVersion: 2
         x: 901
         y: 909
         width: 45
         height: 97
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.6134603, y: 0.9010903}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -339,7 +339,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack4_10
+      name: Bruno_4_Head
       rect:
         serializedVersion: 2
         x: 949
@@ -688,9 +688,9 @@ TextureImporter:
       pack4_16: -1447232772
       Button_Exit_1: 2043294362
       Button_OK_1: 377998787
-      pack4_10: 386141542
       Token_4: 664216812
       pack4_19: 1110355875
+      Bruno_4_Head: 386141542
       pack4_24: -1721072554
       pack4_5: 1166309184
       pack4_20: -1956631132
@@ -701,11 +701,11 @@ TextureImporter:
       Token_5: 975538425
       Button_Exit_2: -281354745
       pack4_9: -737599339
-      pack4_7: 704685232
       pack4_18: -1750498258
-      pack4_17: -204848746
       pack4_21: 1724864974
+      pack4_17: -204848746
       Tube_1: -4775107
+      Bruno_3_Boddy: 704685232
       pack4_4: -2079366650
       pack4_25: 611571526
       Token_1: -178856402

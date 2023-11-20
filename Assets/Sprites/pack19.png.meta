@@ -129,7 +129,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pack19_0
+      name: Sewer Background_1
       rect:
         serializedVersion: 2
         x: 2
@@ -137,7 +137,7 @@ TextureImporter:
         width: 450
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack19_1
+      name: Sewer Background_2
       rect:
         serializedVersion: 2
         x: 454
@@ -158,7 +158,7 @@ TextureImporter:
         width: 450
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,8 +181,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack19_1: -1950595408
-      pack19_0: 35264250
+      Sewer Background_2: -1950595408
+      Sewer Background_1: 35264250
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

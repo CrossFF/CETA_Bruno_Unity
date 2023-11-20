@@ -192,15 +192,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack_3
+      name: Bruno_5_Body
       rect:
         serializedVersion: 2
         x: 952
         y: 841
         width: 41
         height: 180
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.38254306, y: 0.9406328}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,9 +459,9 @@ TextureImporter:
       Bruno_Bottom: -341860259
       pack_13: 274472937
       Tree_Background: -1401994964
-      pack_3: -473940919
       pack_6: -298011681
       pack_10: -670763237
+      Bruno_5_Body: -473940919
       pack_14: 643022684
       pack_0: 669237686
       Fire_Vertical: -1807938788

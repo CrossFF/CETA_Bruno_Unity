@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
-using UnityEditor.PackageManager;
 
 public class LevelManager : MonoBehaviour
 {
@@ -19,6 +17,15 @@ public class LevelManager : MonoBehaviour
     [Header("Level Information")]
     [SerializeField] private int level;
 
+    [Header("Numbers for the Level")]
+    [SerializeField] private bool random = false;
+    [SerializeField] private int minValue = 0;
+    [SerializeField] private int maxValue = 10;
+    [SerializeField] private List<int> numbers;
+
+    public bool Random { get { return random; } }
+    public List<int> Numbers { get { return numbers; } }
+
     private int screwNumberPosition;
     private GameObject screw;
     private int localPoints; // puntos conseguidos en el nivel
@@ -33,6 +40,17 @@ public class LevelManager : MonoBehaviour
         PlayerStats playerStats = LoadSaveManager.LoadGame();
         totalPoints = playerStats.score;
         totalPointText.text = totalPoints.ToString();
+
+        // si la lista de numeros es random
+        //// genero esa cantidad de numeros
+        //(A mejorar)
+        if (random)
+        {
+            for (int i = 0; i < numbers.Count; i++)
+            {
+                numbers[i] = UnityEngine.Random.Range(minValue, maxValue + 1);
+            }
+        }
     }
 
     #region Instantiate Screw
@@ -55,6 +73,7 @@ public class LevelManager : MonoBehaviour
     {
         screwNumberPosition = number;
         screw = Instantiate(prefabScrew, position, Quaternion.identity);
+        numbers.Remove(numbers[0]);
     }
     #endregion
 
