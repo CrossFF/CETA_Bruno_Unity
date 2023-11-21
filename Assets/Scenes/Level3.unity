@@ -596,7 +596,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 772908507}
-  targetNumber: {fileID: 0}
   stopDistance: 0.01
   lastNumberPos: 0
 --- !u!50 &295520041
@@ -1268,10 +1267,12 @@ MonoBehaviour:
   - {fileID: 320630940}
   - {fileID: 634558455}
   totalPointText: {fileID: 1900666213}
+  levelPointsText: {fileID: 638495078}
   level: 3
   random: 0
+  minValue: 0
+  maxValue: 10
   numbers: 030000000600000009000000060000000300000009000000
-  textPoints: {fileID: 638495078}
 --- !u!4 &772908508
 Transform:
   m_ObjectHideFlags: 0

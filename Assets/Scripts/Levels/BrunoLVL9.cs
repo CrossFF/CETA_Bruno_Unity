@@ -9,11 +9,13 @@ public class BrunoLVL9 : Bruno
     [Header("References")]
     [SerializeField] private RectTransform spawnTubePoint;
     [SerializeField] private List<GameObject> prefabsBrunoFriend;
+    [SerializeField] private Animator tubeAnimator;
 
     private List<BrunoFriend> brunos;
     private Vector3 spawnPos;
     private Vector3 fixedTarget;
     private bool speedCalculated = false;
+    private bool moveToSpawn = false;
 
     private void Start()
     {
@@ -28,11 +30,12 @@ public class BrunoLVL9 : Bruno
     {
         if (PrepareMovement)
         {
-            SetBrunoSprites();
-            StopPrepareMovement();
+            tubeAnimator.SetTrigger("Prepare");
+            StartCoroutine(SetBrunoSprites());
         }
         if (Move)
         {
+            tubeAnimator.SetBool("Move", true);
             fixedTarget = new Vector3(transform.position.x,
                                       TargetNumber.transform.position.y,
                                       transform.position.z);
@@ -53,20 +56,34 @@ public class BrunoLVL9 : Bruno
         }
         if (Interacting)
         {
+            tubeAnimator.SetBool("Move", false);
             brunos[0].Interact();
             StopInteract();
         }
+        if (moveToSpawn)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, spawnPos, 5 * Time.deltaTime);
+            if (Vector3.Distance(transform.position, spawnPos) <= StopDistance)
+            {
+                // detengo el movimiento
+                // informo al manager que estoy en la posicion deseada
+                moveToSpawn = false;
+            }
+        }
     }
 
-    private void SetBrunoSprites()
+    private IEnumerator SetBrunoSprites()
     {
-        // muevo a bruno a su pocision inicial
+        // Muevo a bruno a su pocision inicial
+        // Tiempo de Espera
         // Consigo la lista de tokens que hay en juego
         // si existen instancias
         //// elimino a las instancias actuales
         // creo nuevas instancias segun la lista
         // posiciono las instacias
-        transform.position = spawnPos;
+        StopPrepareMovement();
+        moveToSpawn = true;
+        yield return new WaitForSeconds(0.5f);
         speedCalculated = false;
         List<int> numbers = GameObject.FindObjectOfType<NumberHolder>().GetTokensInPlay();
         if (brunos.Count > 0)

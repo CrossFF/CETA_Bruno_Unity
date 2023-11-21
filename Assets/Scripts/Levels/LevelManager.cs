@@ -13,6 +13,7 @@ public class LevelManager : MonoBehaviour
 
     [Header("GUI")]
     [SerializeField] private TMP_Text totalPointText;
+    [SerializeField] private TMP_Text levelPointsText;
 
     [Header("Level Information")]
     [SerializeField] private int level;
@@ -30,9 +31,11 @@ public class LevelManager : MonoBehaviour
     private GameObject screw;
     private int localPoints; // puntos conseguidos en el nivel
     private int totalPoints; // puntos totales del jugador
+    private int pointsToWin;
 
     public GameObject Screw { get { return screw; } }
     public int LocalPoints { get { return localPoints; } }
+    public int PointsToWin { get { return pointsToWin; } }
 
     private void Awake()
     {
@@ -40,6 +43,7 @@ public class LevelManager : MonoBehaviour
         PlayerStats playerStats = LoadSaveManager.LoadGame();
         totalPoints = playerStats.score;
         totalPointText.text = totalPoints.ToString();
+        pointsToWin = numbers.Count;
 
         // si la lista de numeros es random
         //// genero esa cantidad de numeros
@@ -51,6 +55,12 @@ public class LevelManager : MonoBehaviour
                 numbers[i] = UnityEngine.Random.Range(minValue, maxValue + 1);
             }
         }
+    }
+
+    public void UpdateGUI()
+    {
+        string tPoints = LocalPoints + "/" + pointsToWin;
+        levelPointsText.text = tPoints;
     }
 
     #region Instantiate Screw

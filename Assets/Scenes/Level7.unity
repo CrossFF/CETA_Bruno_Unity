@@ -640,7 +640,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelManager: {fileID: 772908509}
-  targetNumber: {fileID: 0}
   stopDistance: 0.01
   lastNumberPos: 0
 --- !u!95 &295520044
@@ -1300,10 +1299,12 @@ MonoBehaviour:
   - {fileID: 320630940}
   - {fileID: 634558455}
   totalPointText: {fileID: 1900666213}
+  levelPointsText: {fileID: 638495078}
   level: 5
   random: 1
+  minValue: 0
+  maxValue: 10
   numbers: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
-  textPoints: {fileID: 638495078}
 --- !u!1 &798616831
 GameObject:
   m_ObjectHideFlags: 0

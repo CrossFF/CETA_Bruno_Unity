@@ -5,34 +5,17 @@ using TMPro;
 
 public class Island2 : LevelManager
 {
-    [Header("GUI Level 1")]
-    [SerializeField] private TMP_Text textPoints;
-
-    private int pointsToWin;
-
-    private void Start()
-    {
-        pointsToWin = Numbers.Count;
-    }
-
     private void Update()
     {
-        GUIUpdate();
+        UpdateGUI();
         WinCondition();
         ScrewControl();
-    }
-
-    private void GUIUpdate()
-    {
-        // actualizacion de puntos
-        string tPoints = LocalPoints + "/" + pointsToWin;
-        textPoints.text = tPoints;
     }
 
     private void WinCondition()
     {
         // win condition
-        if (LocalPoints == pointsToWin)
+        if (LocalPoints == PointsToWin)
         {
             EndLevel(true);
         }
