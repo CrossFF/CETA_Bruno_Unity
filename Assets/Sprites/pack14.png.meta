@@ -137,7 +137,7 @@ TextureImporter:
         width: 450
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,7 +150,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pack14_1
+      name: Ocean_Background_1
       rect:
         serializedVersion: 2
         x: 454
@@ -158,7 +158,7 @@ TextureImporter:
         width: 449
         height: 525
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      pack14_1: -1058826043
+      Ocean_Background_1: -1058826043
       pack14_0: 37139423
   spritePackingTag: 
   pSDRemoveMatte: 0
