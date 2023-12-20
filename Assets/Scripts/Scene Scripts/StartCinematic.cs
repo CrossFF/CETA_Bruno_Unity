@@ -4,12 +4,23 @@ using UnityEngine;
 
 public class StartCinematic : MonoBehaviour
 {
-    public void Play()
+    [SerializeField] private AudioSource voice;
+    [SerializeField] private List<AudioClip> voiceClips;
+
+    void Start()
     {
-        // cargo partida
-        // si no hay datos
-        //// cambio a escena de cinematica
-        // si los hay
-        //// voy al menu principal
+        StartCoroutine(SceneControl());
+    }
+
+    private IEnumerator SceneControl()
+    {
+        foreach (var clip in voiceClips)
+        {
+            voice.clip = clip;
+            voice.Play();
+            yield return new WaitForSeconds(clip.length + 0.5f);
+        }
+        SceneControl sceneControl = new SceneControl();
+        sceneControl.ChangeScene("Tutorial");
     }
 }

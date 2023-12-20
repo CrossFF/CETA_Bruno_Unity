@@ -6,7 +6,7 @@ using TMPro;
 public class NumberBarManager : MonoBehaviour
 {
     [SerializeField] private Color highlightColor;
-    [SerializeField] private List<GameObject> numbers;
+    [SerializeField] private List<GameObject> uiNumbers;
     [SerializeField] private List<AudioClip> numbers_audio;
     [SerializeField] private List<WorldNumber> worldNumbers;
 
@@ -21,7 +21,7 @@ public class NumberBarManager : MonoBehaviour
     {
         // setting pos of world numbers
         int index = 0;
-        foreach (var number in numbers)
+        foreach (var number in uiNumbers)
         {
             RectTransform uiNumber = number.GetComponent<RectTransform>();
             Vector3 pos = Camera.main.ScreenToWorldPoint(uiNumber.position);
@@ -34,7 +34,7 @@ public class NumberBarManager : MonoBehaviour
     public void HighlightNumber(int num)
     {
         int index = 0;
-        foreach (var number in numbers)
+        foreach (var number in uiNumbers)
         {
             TMP_Text numText = number.GetComponent<TMP_Text>();
             if (number.name == num.ToString())
@@ -58,7 +58,7 @@ public class NumberBarManager : MonoBehaviour
     public void HighlightNumberNoSound(int num)
     {
         int index = 0;
-        foreach (var number in numbers)
+        foreach (var number in uiNumbers)
         {
             TMP_Text numText = number.GetComponent<TMP_Text>();
             if (number.name == num.ToString())

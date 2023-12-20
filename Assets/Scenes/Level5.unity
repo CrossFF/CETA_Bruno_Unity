@@ -3666,6 +3666,7 @@ MonoBehaviour:
   levelManager: {fileID: 772908509}
   timeBeforeCalculate: 1
   graceTime: 0.8
+  base10: 0
 --- !u!1 &1902316012468170464
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,7 +3866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   highlightColor: {r: 1, g: 0.37877163, b: 0, a: 1}
-  numbers:
+  uiNumbers:
   - {fileID: 1902316012814655418}
   - {fileID: 1902316013587949575}
   - {fileID: 1902316012249260477}

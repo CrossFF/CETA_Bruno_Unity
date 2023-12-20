@@ -15,6 +15,7 @@ public class NumberHolder : MonoBehaviour, IDropHandler
     [SerializeField] private LevelManager levelManager;
     [SerializeField] private float timeBeforeCalculate = 1f;
     [SerializeField] private float graceTime = 0.5f;
+    [SerializeField] private bool base10 = false;
 
     private void Awake()
     {
@@ -25,6 +26,8 @@ public class NumberHolder : MonoBehaviour, IDropHandler
 
     private void Start()
     {
+        if (base10)
+            totalValue = 10;
         numberBar.HighlightNumberNoSound(totalValue);
     }
 
@@ -82,6 +85,10 @@ public class NumberHolder : MonoBehaviour, IDropHandler
             {
                 totalValue += token.value;
             }
+        }
+        if (base10)
+        {
+            totalValue += 10;
         }
         //bruno empieza a preparar moviento
         levelManager.PrepareBrunoToMove();
