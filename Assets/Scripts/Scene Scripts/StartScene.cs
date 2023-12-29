@@ -16,7 +16,7 @@ public class StartScene : MonoBehaviour
         SceneControl sceneControl = new();
         yield return new WaitForSeconds(1f);
         voiceLine.Play();
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(voiceLine.clip.length + 0.5f);
         PlayerStats player = LoadSaveManager.LoadGame();
         if (player.neverPlay)
         {

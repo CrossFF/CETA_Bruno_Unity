@@ -8,17 +8,20 @@ public class MainMenu : MonoBehaviour
 
     public void ButtonPlay()
     {
-        
+        PlayerStats player = LoadSaveManager.LoadGame();
+        string level = "Level" + player.lastLevel;
+        sceneControl.ChangeScene(level);
     }
 
     public void ButtonReset()
     {
-        
+        PlayerStats player = new PlayerStats(true, 0, 1);
+        LoadSaveManager.SaveGame(player);
     }
 
     public void ButtonTutorial()
     {
-
+        sceneControl.ChangeScene("Tutorial");
     }
 
     public void ButtonExit()
